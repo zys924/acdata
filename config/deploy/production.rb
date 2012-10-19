@@ -1,11 +1,11 @@
-set(:user) { 'intersect' }
-set :deploy_base, '/spare/acdata'
-set :data_dir, '/spare/acdata/data'
+set(:user) { 'admin' }
+set :deploy_base, '/home/admin/deploy'
+set :data_dir, '/home/admin/deploy/data'
 set(:deploy_to) { "#{deploy_base}/acdata-web" }
 # Your HTTP server, Apache/etc
-role :web, 'www.researchdata.unsw.edu.au'
+role :web, 'localhost'
 # This may be the same as your Web server
-role :app, 'www.researchdata.unsw.edu.au'
+role :app, 'localhost'
 # This is where Rails migrations will run
-role :db,  'www.researchdata.unsw.edu.au', :primary => true
+role :db,  'localhost', :primary => true
 

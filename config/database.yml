@@ -24,7 +24,7 @@ production:
   host: localhost
   database: acdata
   username: acdata
-  password: '******'
+  password:'123456'
   pool: 5
   timeout: 5000
 
