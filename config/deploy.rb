@@ -15,7 +15,7 @@ set :rvm_ruby_string, 'ruby-1.9.3-p194@acdata'
 set :rvm_type, :user
 
 set :scm, 'git'
-set :repository, 'https://github.com/IntersectAustralia/acdata.git'
+set :repository, 'https://github.com/zys924/acdata.git'
 set :deploy_via, :copy
 set :copy_exclude, [".git/*"]
 
